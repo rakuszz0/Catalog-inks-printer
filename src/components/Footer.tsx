@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
               <i className="fas fa-print text-3xl bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent"></i>
-              TintaPrinter.ID
+              Dunia Cartridge
             </h3>
             <p className="text-gray-400 text-lg leading-relaxed">
               Supplier tinta printer original terlengkap dan terpercaya untuk kebutuhan kantor dan rumahan.
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
             </p>
             <p className="text-gray-400 flex items-center gap-3">
               <i className="fas fa-phone text-indigo-500"></i>
-              Telepon: (08) 2114394275
+              Telepon: (08) 2177218620
             </p>
           </div>
           <div>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
             </h3>
             <div className="flex flex-col gap-3">
               <a
-                href="https://wa.me/6282114394275"
+                href="https://wa.me/6282177218620"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-gradient-to-r from-green-600 to-green-700 px-5 py-3 rounded-xl hover:shadow-lg transition-all duration-300"
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
                 WhatsApp
               </a>
               <a
-                href="https://instagram.com/tintaprinterid"
+                href="https://instagram.com/duniacartridge"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-gradient-to-r from-pink-600 to-purple-600 px-5 py-3 rounded-xl hover:shadow-lg transition-all duration-300"
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
                 Instagram
               </a>
               <a
-                href="https://facebook.com/tintaprinterid"
+                href="https://facebook.com/duniacartridge"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 px-5 py-3 rounded-xl hover:shadow-lg transition-all duration-300"
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="border-t border-gray-700 pt-6 text-center text-gray-500">
-          <p>&copy; 2026 TintaPrinter.ID. All rights reserved.</p>
+          <p>&copy; 2026 Dunia Cartridge. All rights reserved.</p>
         </div>
       </div>
     </footer>

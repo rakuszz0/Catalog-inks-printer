@@ -74,7 +74,7 @@ const AboutUs: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-lg hover:text-green-300 transition-colors cursor-pointer"
               >
-                TOLIP CARTRIDGE
+                DUNIA CARTRIDGE
               </a>
               <p className="text-lg mt-2">
                 Senin - Sabtu: 09:00 - 20:00 WIB
