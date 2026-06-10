@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
           Katalog Tinta Printer Terlengkap
         </h2>
         <p className="text-xl md:text-2xl text-white/90 mb-8">
-          Tinta Original Epson, HP, dan Brother dengan Harga Terbaik
+          Tinta Original Epson, Canon, HP, dan Brother dengan Harga Terbaik
         </p>
         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
           <div className="bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full text-white font-semibold">

@@ -8,6 +8,7 @@ export interface Product {
   capacity: string;
   compatible: string[];
   price: number;
+  imageUrl: string;
 }
 
 export const products: Product[] = [
@@ -22,6 +23,7 @@ export const products: Product[] = [
     capacity: "70ml",
     compatible: ["L120", "L210", "L360"],
     price: 85000,
+    imageUrl: "/images/products/epson-664-black.jpg",
   },
   {
     id: "2",
@@ -33,6 +35,7 @@ export const products: Product[] = [
     capacity: "70ml",
     compatible: ["L120", "L210", "L360"],
     price: 85000,
+    imageUrl: "/images/products/epson-664-cyan.jpg",
   },
   {
     id: "3",
@@ -44,6 +47,7 @@ export const products: Product[] = [
     capacity: "70ml",
     compatible: ["L120", "L210", "L360"],
     price: 85000,
+    imageUrl: "/images/products/epson-664-magenta.jpg",
   },
   {
     id: "4",
@@ -55,6 +59,7 @@ export const products: Product[] = [
     capacity: "70ml",
     compatible: ["L120", "L210", "L360"],
     price: 85000,
+    imageUrl: "/images/products/epson-664-yellow.jpg",
   },
   {
     id: "5",
@@ -66,6 +71,7 @@ export const products: Product[] = [
     capacity: "480 halaman",
     compatible: ["HP 2335", "HP 2336", "HP 2775"],
     price: 145000,
+    imageUrl: "/images/products/hp-680-black.jpg",
   },
   {
     id: "6",
@@ -77,6 +83,7 @@ export const products: Product[] = [
     capacity: "150 halaman",
     compatible: ["HP 2335", "HP 2336", "HP 2775"],
     price: 185000,
+    imageUrl: "/images/products/hp-680-tri-color.jpg",
   },
   {
     id: "7",
@@ -88,6 +95,7 @@ export const products: Product[] = [
     capacity: "5000 halaman",
     compatible: ["T300", "T500", "T700"],
     price: 125000,
+    imageUrl: "/images/products/brother-bt6000bk.jpg",
   },
   {
     id: "8",
@@ -99,6 +107,7 @@ export const products: Product[] = [
     capacity: "1500 halaman",
     compatible: ["T300", "T500", "T700"],
     price: 95000,
+    imageUrl: "/images/products/brother-bt5000cmy.jpg",
   },
   // TONER
   {
@@ -111,6 +120,7 @@ export const products: Product[] = [
     capacity: "1600 halaman",
     compatible: ["HP P1102", "HP M1132", "HP M1212"],
     price: 450000,
+    imageUrl: "/images/products/hp-85a-toner.jpg",
   },
   {
     id: "10",
@@ -122,6 +132,7 @@ export const products: Product[] = [
     capacity: "2000 halaman",
     compatible: ["HP 1010", "HP 1018", "HP 1020", "HP M1005"],
     price: 520000,
+    imageUrl: "/images/products/hp-12a-toner.jpg",
   },
   {
     id: "11",
@@ -133,6 +144,7 @@ export const products: Product[] = [
     capacity: "400 halaman",
     compatible: ["Canon E400", "Canon E410", "Canon E460", "Canon E470"],
     price: 145000,
+    imageUrl: "/images/products/canon-pg47-black.jpg",
   },
   {
     id: "12",
@@ -144,6 +156,7 @@ export const products: Product[] = [
     capacity: "300 halaman",
     compatible: ["Canon E400", "Canon E410", "Canon E460", "Canon E470"],
     price: 185000,
+    imageUrl: "/images/products/canon-cl57-color.jpg",
   },
   {
     id: "13",
@@ -155,6 +168,7 @@ export const products: Product[] = [
     capacity: "220 halaman",
     compatible: ["Canon MP258", "Canon MP287", "Canon MP497", "Canon MX328"],
     price: 155000,
+    imageUrl: "/images/products/canon-pg810-black.jpg",
   },
   {
     id: "14",
@@ -166,6 +180,7 @@ export const products: Product[] = [
     capacity: "244 halaman",
     compatible: ["Canon MP258", "Canon MP287", "Canon MP497", "Canon MX328"],
     price: 195000,
+    imageUrl: "/images/products/canon-cl811-color.jpg",
   },
   {
     id: "15",
@@ -177,6 +192,7 @@ export const products: Product[] = [
     capacity: "2100 halaman",
     compatible: ["Canon MF4410", "Canon MF4450", "Canon MF4710"],
     price: 480000,
+    imageUrl: "/images/products/canon-328-toner.jpg",
   },
   {
     id: "16",
@@ -188,6 +204,7 @@ export const products: Product[] = [
     capacity: "2400 halaman",
     compatible: ["Canon MF211", "Canon MF212", "Canon MF215", "Canon MF217"],
     price: 550000,
+    imageUrl: "/images/products/canon-337-toner.jpg",
   },
   {
     id: "17",
@@ -199,6 +216,7 @@ export const products: Product[] = [
     capacity: "1500 halaman",
     compatible: ["Xerox B205", "Xerox B210", "Xerox B215"],
     price: 450000,
+    imageUrl: "/images/products/xerox-106r04377.jpg",
   },
   {
     id: "18",
@@ -210,6 +228,7 @@ export const products: Product[] = [
     capacity: "3000 halaman",
     compatible: ["Xerox Phaser 3020", "Xerox WorkCentre 3025"],
     price: 580000,
+    imageUrl: "/images/products/xerox-106r02773.jpg",
   },
   {
     id: "19",
@@ -221,6 +240,7 @@ export const products: Product[] = [
     capacity: "1200 halaman",
     compatible: ["Brother HL-2240", "Brother HL-2250", "Brother DCP-7060"],
     price: 380000,
+    imageUrl: "/images/products/brother-tn2260.jpg",
   },
   {
     id: "20",
@@ -232,6 +252,7 @@ export const products: Product[] = [
     capacity: "2600 halaman",
     compatible: ["Brother HL-2240", "Brother HL-2250", "Brother MFC-7360"],
     price: 490000,
+    imageUrl: "/images/products/brother-tn2280.jpg",
   },
   {
     id: "21",
@@ -243,6 +264,7 @@ export const products: Product[] = [
     capacity: "1000 halaman",
     compatible: ["Epson M1100", "Epson M1120"],
     price: 350000,
+    imageUrl: "/images/products/epson-m1100-toner.jpg",
   },
   {
     id: "22",
@@ -254,5 +276,6 @@ export const products: Product[] = [
     capacity: "1500 halaman",
     compatible: ["Xerox 3020", "Xerox 3025"],
     price: 420000,
+    imageUrl: "/images/products/xerox-3020-toner.jpg",
   },
 ];

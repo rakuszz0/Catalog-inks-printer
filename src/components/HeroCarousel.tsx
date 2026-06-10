@@ -16,7 +16,7 @@ const slides: Slide[] = [
   {
     id: "1",
     title: "Katalog Tinta Printer Terlengkap",
-    subtitle: "Tinta Original Epson, HP, Brother, Canon, Xerox",
+    subtitle: "Tinta & Toner Original Epson, HP, Brother, Canon, Xerox",
     description: "Harga terbaik, kualitas terjamin, dan pengiriman cepat!",
     gradient: "from-indigo-500 via-purple-500 to-pink-500",
     icon: "fas fa-print",

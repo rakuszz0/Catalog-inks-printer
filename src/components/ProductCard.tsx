@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
+import Image from "next/image";
 import { Product } from "@/lib/products";
 
 const WHATSAPP_NUMBER = "6281234567890";
@@ -15,6 +16,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
     window.open(whatsappUrl, "_blank");
   };
+
+  const [imageError, setImageError] = useState(false);
 
   // Brand-specific colors
   const brandColors = {
@@ -48,9 +51,24 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </div>
       </div>
       
-      {/* Product icon */}
-      <div className={`text-center mb-6 p-6 bg-gradient-to-br ${brandColors[product.brand]}/10 rounded-2xl`}>
-        <i className={`${product.category === "toner" ? "fas fa-microchip" : "fas fa-tint"} text-7xl bg-gradient-to-r ${brandColors[product.brand]} bg-clip-text text-transparent`}></i>
+      {/* Product image or icon */}
+      <div className={`text-center mb-6 p-4 bg-gradient-to-br ${brandColors[product.brand]}/10 rounded-2xl overflow-hidden`}>
+        {!imageError ? (
+          <div className="relative w-full h-48 flex items-center justify-center">
+            <Image
+              src={product.imageUrl}
+              alt={product.name}
+              fill
+              style={{ objectFit: "contain" }}
+              className="rounded-xl"
+              onError={() => setImageError(true)}
+            />
+          </div>
+        ) : (
+          <div className="py-8">
+            <i className={`${product.category === "toner" ? "fas fa-microchip" : "fas fa-tint"} text-7xl bg-gradient-to-r ${brandColors[product.brand]} bg-clip-text text-transparent`}></i>
+          </div>
+        )}
       </div>
       
       {/* Product name */}
