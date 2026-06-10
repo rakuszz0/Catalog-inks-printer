@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Product } from "@/lib/products";
 
-const WHATSAPP_NUMBER = "6281369982308";
+const WHATSAPP_NUMBER = "6282114394275";
 
 interface ProductCardProps {
   product: Product;
