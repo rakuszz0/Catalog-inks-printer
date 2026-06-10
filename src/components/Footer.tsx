@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   // Google Maps link (you can update this with your actual location)
-  const GOOGLE_MAPS_URL = "https://maps.google.com/?q=Jl.+Printer+No.+123+Jakarta+Pusat";
+  const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/JyuQFFR6AuVf3N44A";
 
   return (
     <footer id="contact" className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 mt-12">
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             >
               <p className="text-gray-300 mb-2 flex items-start gap-3">
                 <i className="fas fa-map-marker-alt text-red-500 mt-1"></i>
-                <span>Jl. Printer No. 123, Jakarta Pusat</span>
+                <span>Jl. Panjang, Jakarta Barat</span>
               </p>
               <p className="text-sm text-gray-400 flex items-center gap-2 group-hover:text-indigo-400 transition-colors">
                 <i className="fas fa-external-link-alt"></i>

@@ -69,12 +69,12 @@ const AboutUs: React.FC = () => {
             <div className="text-center md:text-right">
               <i className="fas fa-store text-7xl text-white/30 mb-4"></i>
               <a
-                href="https://maps.google.com/?q=Jl.+Printer+No.+123+Jakarta+Pusat"
+                href="https://maps.app.goo.gl/JyuQFFR6AuVf3N44A"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-lg hover:text-green-300 transition-colors cursor-pointer"
               >
-                Jl. Printer No. 123, Jakarta Pusat
+                TOLIP CARTRIDGE
               </a>
               <p className="text-lg mt-2">
                 Senin - Sabtu: 09:00 - 18:00 WIB
