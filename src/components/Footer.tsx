@@ -38,11 +38,11 @@ const Footer: React.FC = () => {
             </a>
             <p className="text-gray-400 mb-3 flex items-center gap-3">
               <i className="fas fa-clock text-indigo-500"></i>
-              Senin - Sabtu: 09.00 - 18.00 WIB
+              Senin - Sabtu: 09.00 - 20.00 WIB
             </p>
             <p className="text-gray-400 flex items-center gap-3">
               <i className="fas fa-phone text-indigo-500"></i>
-              Telepon: (021) 1234567
+              Telepon: (08) 2114394275
             </p>
           </div>
           <div>

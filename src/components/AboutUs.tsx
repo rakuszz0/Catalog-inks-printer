@@ -77,7 +77,7 @@ const AboutUs: React.FC = () => {
                 TOLIP CARTRIDGE
               </a>
               <p className="text-lg mt-2">
-                Senin - Sabtu: 09:00 - 18:00 WIB
+                Senin - Sabtu: 09:00 - 20:00 WIB
               </p>
             </div>
           </div>
