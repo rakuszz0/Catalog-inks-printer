@@ -9,7 +9,7 @@ interface Slide {
   gradient: string;
   icon: string;
   buttonText: string;
-  filter: "all" | "tinta" | "toner";
+  filter: "all" | "tinta" | "toner" | "cartridge";
 }
 
 const slides: Slide[] = [
@@ -35,10 +35,20 @@ const slides: Slide[] = [
   },
   {
     id: "3",
+    title: "Cartridge Printer Asli dan Berkualitas",
+    subtitle: "Cartridge Original untuk Semua Jenis Printer",
+    description: "Cartridge asli dengan kualitas cetak yang tajam dan awet!",
+    gradient: "from-orange-500 via-red-500 to-pink-600",
+    icon: "fas fa-box",
+    buttonText: "Lihat Semua Cartridge",
+    filter: "cartridge",
+  },
+  {
+    id: "4",
     title: "Diskon Spesial Bulan Ini!",
     subtitle: "Dapatkan Potongan Harga Menarik",
     description: "Belanja lebih hemat dengan promo spesial kami!",
-    gradient: "from-orange-500 via-red-500 to-pink-600",
+    gradient: "from-yellow-500 via-orange-500 to-red-500",
     icon: "fas fa-tags",
     buttonText: "Pesan Sekarang!",
     filter: "all",
@@ -46,7 +56,7 @@ const slides: Slide[] = [
 ];
 
 interface HeroCarouselProps {
-  onButtonClick: (filter: "all" | "tinta" | "toner") => void;
+  onButtonClick: (filter: "all" | "tinta" | "toner" | "cartridge") => void;
 }
 
 const HeroCarousel: React.FC<HeroCarouselProps> = ({ onButtonClick }) => {

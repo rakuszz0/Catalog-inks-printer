@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import { products } from "@/lib/products";
 
 export default function Home() {
-  const [activeFilter, setActiveFilter] = useState<"all" | "tinta" | "toner">("all");
+  const [activeFilter, setActiveFilter] = useState<"all" | "tinta" | "toner" | "cartridge">("all");
 
   const filteredProducts = activeFilter === "all" 
     ? products 
@@ -56,6 +56,16 @@ export default function Home() {
               }`}
             >
               Toner
+            </button>
+            <button
+              onClick={() => setActiveFilter("cartridge")}
+              className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
+                activeFilter === "cartridge"
+                  ? "bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-lg"
+                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+              }`}
+            >
+              Cartridge
             </button>
           </div>
           

@@ -32,11 +32,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const categoryLabel = {
     tinta: "Tinta",
     toner: "Toner",
+    cartridge: "Cartridge",
   };
 
   const categoryColors = {
     tinta: "from-green-500 to-teal-600",
     toner: "from-purple-500 to-pink-600",
+    cartridge: "from-orange-500 to-red-500",
   };
 
   return (
