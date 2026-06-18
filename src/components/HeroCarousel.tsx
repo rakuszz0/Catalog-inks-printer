@@ -43,16 +43,16 @@ const slides: Slide[] = [
     buttonText: "Lihat Semua Cartridge",
     filter: "cartridge",
   },
-  {
-    id: "4",
-    title: "Diskon Spesial Bulan Ini!",
-    subtitle: "Dapatkan Potongan Harga Menarik",
-    description: "Belanja lebih hemat dengan promo spesial kami!",
-    gradient: "from-yellow-500 via-orange-500 to-red-500",
-    icon: "fas fa-tags",
-    buttonText: "Pesan Sekarang!",
-    filter: "all",
-  },
+  // {
+  //   id: "4",
+  //   title: "Diskon Spesial Bulan Ini!",
+  //   subtitle: "Dapatkan Potongan Harga Menarik",
+  //   description: "Belanja lebih hemat dengan promo spesial kami!",
+  //   gradient: "from-yellow-500 via-orange-500 to-red-500",
+  //   icon: "fas fa-tags",
+  //   buttonText: "Pesan Sekarang!",
+  //   filter: "all",
+  // },
 ];
 
 interface HeroCarouselProps {

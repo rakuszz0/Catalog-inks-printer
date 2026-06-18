@@ -6,7 +6,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
         <h1 className="text-2xl font-bold flex items-center gap-2">
           <i className="fas fa-print"></i>
-          TintaPrinter.ID
+          Dunia Cartridge
         </h1>
         <nav>
           <ul className="flex gap-6 md:gap-8">

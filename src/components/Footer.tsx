@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   // Google Maps link (you can update this with your actual location)
-  const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/JyuQFFR6AuVf3N44A";
+  const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/kytfMKKcwEUtQbxi7?g_st=iw";
 
   return (
     <footer id="contact" className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 mt-12">
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             >
               <p className="text-gray-300 mb-2 flex items-start gap-3">
                 <i className="fas fa-map-marker-alt text-red-500 mt-1"></i>
-                <span>Jl. Panjang, Jakarta Barat</span>
+                <span>Jl. Taman Makam Pahlawan Taruna, kec. Tangerang, Banten</span>
               </p>
               <p className="text-sm text-gray-400 flex items-center gap-2 group-hover:text-indigo-400 transition-colors">
                 <i className="fas fa-external-link-alt"></i>
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
             </p>
             <p className="text-gray-400 flex items-center gap-3">
               <i className="fas fa-phone text-indigo-500"></i>
-              Telepon: (08) 2177218620
+              Telepon: (08) 57 5400 8091
             </p>
           </div>
           <div>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
             </h3>
             <div className="flex flex-col gap-3">
               <a
-                href="https://wa.me/6282177218620"
+                href="https://wa.me/6285754008091"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-gradient-to-r from-green-600 to-green-700 px-5 py-3 rounded-xl hover:shadow-lg transition-all duration-300"
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
                 WhatsApp
               </a>
               <a
-                href="https://instagram.com/duniacartridge"
+                href="https://www.instagram.com/rakasiwi_97/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-gradient-to-r from-pink-600 to-purple-600 px-5 py-3 rounded-xl hover:shadow-lg transition-all duration-300"
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
                 Instagram
               </a>
               <a
-                href="https://facebook.com/duniacartridge"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 px-5 py-3 rounded-xl hover:shadow-lg transition-all duration-300"
@@ -77,11 +77,20 @@ const Footer: React.FC = () => {
                 <i className="fab fa-facebook text-2xl"></i>
                 Facebook
               </a>
+               <a
+                href="https://www.lazada.co.id/shop/azzam-store1617785893"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-gradient-to-r from-orange-600 to-orange-700 px-5 py-3 rounded-xl hover:shadow-lg transition-all duration-300"
+              >
+                <i className="fab fa-lazada text-2xl"></i>
+                Lazada
+              </a>
             </div>
           </div>
         </div>
         <div className="border-t border-gray-700 pt-6 text-center text-gray-500">
-          <p>&copy; 2026 Dunia Cartridge. All rights reserved.</p>
+          <p>&copy; 2023 Dunia Cartridge. All rights reserved.</p>
         </div>
       </div>
     </footer>

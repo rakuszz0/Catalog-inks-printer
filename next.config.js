@@ -10,7 +10,10 @@ const nextConfig = {
       },
     ],
     dangerouslyAllowSVG: true,
+    formats: ['image/avif', 'image/webp'],
+    minimumCacheTTL: 60,
   },
+  compress: true,
 };
 
 module.exports = nextConfig;
