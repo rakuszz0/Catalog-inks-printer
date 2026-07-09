@@ -94,8 +94,19 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({ onButtonClick }) => {
         {slides.map((slide) => (
           <div
             key={slide.id}
-            className={`relative min-w-full py-20 md:py-28 text-center overflow-hidden bg-gradient-to-r ${slide.gradient}`}
+            className="relative min-w-full py-20 md:py-28 text-center overflow-hidden"
           >
+            {/* Background Image */}
+            <div className="absolute top-0 left-0 w-full h-full">
+              <img
+                src="/images/dunia_catridge.png"
+                alt="Background"
+                className="w-full h-full object-cover"
+              />
+              {/* Dark overlay for text readability */}
+              <div className="absolute top-0 left-0 w-full h-full bg-black/20"></div>
+            </div>
+
             {/* Decorative background elements */}
             <div className="absolute top-0 left-0 w-full h-full opacity-10">
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-white rounded-full blur-3xl"></div>

@@ -1,3 +1,5 @@
+import { getImageUrl } from "./cloudinary";
+
 export interface Product {
   id: string;
   name: string;
@@ -32,7 +34,7 @@ export const products: Product[] = [
     capacity: "70 ml",
     compatible: ["L1210", "L3210", "L3250", "L3216", "L3150", "L3110"],
     price: 85000,
-    imageUrl: "/images/products/003_black.jpeg",
+    imageUrl: getImageUrl("003_black.jpg", "epson"),
     description: "Tinta Epson 003 Original dirancang khusus untuk printer Epson seri L dengan teknologi Micro Piezo. Menghasilkan cetakan hitam yang tajam, tahan air dan tahan cahaya. Kapasitas besar untuk penggunaan sehari-hari yang hemat biaya.",
     reviews: [
       { name: "Budi Santoso", rating: 5, date: "15 Mei 2024", comment: "Kualitas tinta benar-benar original! Hasil cetakan jernih dan tidak mudah luntur. Recommended banget!" },
@@ -49,7 +51,7 @@ export const products: Product[] = [
     capacity: "70 ml (warna)",
     compatible: ["L1210", "L3210", "L3250", "L3216", "L3150", "L3110"],
     price: 90000,
-    imageUrl: "/images/products/003_cym.jpeg",
+    imageUrl: getImageUrl("003_cym.jpg", "epson"),
     description: "Tinta Epson 003 Color Original memberikan hasil warna cerah dan natural untuk foto dan dokumen. Diformulasi khusus untuk printer Epson dengan teknologi DURABrite.",
     reviews: [
       { name: "Dewi Lestari", rating: 5, date: "10 Juni 2024", comment: "Warna super cerah! Cocok banget untuk cetak foto keluarga." },
@@ -66,7 +68,7 @@ export const products: Product[] = [
     capacity: "70 ml",
     compatible: ["L120", "L210", "L220", "L300", "L360"],
     price: 85000,
-    imageUrl: "/images/products/664_b.jpeg",
+    imageUrl: getImageUrl("664_b.jpg", "epson"),
     description: "Epson T6641 Tinta Hitam Original adalah tinta asli Epson yang dirancang khusus untuk printer Epson seri L. Menghasilkan kualitas cetak yang tajam, jelas, dan tahan lama.",
     reviews: [
       { name: "Andi Pratama", rating: 5, date: "25 Mei 2024", comment: "Tinta original, hasil cetak jelas banget!" },
@@ -83,7 +85,7 @@ export const products: Product[] = [
     capacity: "70 ml",
     compatible: ["L120", "L210", "L220", "L300", "L360"],
     price: 85000,
-    imageUrl: "/images/products/664_blue.jpeg",
+    imageUrl: getImageUrl("664_blue.jpg", "epson"),
     description: "Tinta Epson 664 Cyan Original memberikan hasil warna cerah dan natural untuk foto dan dokumen.",
     reviews: []
   },
@@ -97,7 +99,7 @@ export const products: Product[] = [
     capacity: "70 ml",
     compatible: ["L120", "L210", "L220", "L300", "L360"],
     price: 85000,
-    imageUrl: "/images/products/664_m.jpeg",
+    imageUrl: getImageUrl("664_m.jpg", "epson"),
     description: "Tinta Epson 664 Magenta Original memberikan gradasi warna yang smooth dan natural.",
     reviews: []
   },
@@ -111,7 +113,7 @@ export const products: Product[] = [
     capacity: "70 ml",
     compatible: ["L120", "L210", "L220", "L300", "L360"],
     price: 85000,
-    imageUrl: "/images/products/664_y.jpeg",
+    imageUrl: getImageUrl("664_y.jpg", "epson"),
     description: "Tinta Epson 664 Yellow Original memberikan warna kuning yang cerah dan tidak mudah pudar.",
     reviews: []
   },
@@ -125,7 +127,7 @@ export const products: Product[] = [
     capacity: "70 ml per botol",
     compatible: ["L800", "L805", "L810", "L850", "L1800"],
     price: 650000,
-    imageUrl: "/images/products/673.jpeg",
+    imageUrl: getImageUrl("673.jpg", "epson"),
     description: "Epson 673 Tinta Photo Original 6 Warna adalah tinta khusus untuk printer foto Epson. Menghasilkan kualitas foto profesional dengan gradasi warna yang halus dan tahan lama.",
     reviews: [
       { name: "Foto Studio Jakarta", rating: 5, date: "30 Juni 2024", comment: "Untuk kebutuhan studio foto, tinta ini adalah pilihan terbaik!" },
@@ -142,7 +144,7 @@ export const products: Product[] = [
     capacity: "127 ml (hitam), 70 ml (warna)",
     compatible: ["L4150", "L4160", "L6160", "L6170", "L6190"],
     price: 850000,
-    imageUrl: "/images/products/001.jpeg",
+    imageUrl: getImageUrl("001.jpg", "epson"),
     description: "Epson 001 Tinta Original adalah tinta baru dari Epson untuk printer seri L yang lebih baru. Hitam pigment untuk dokumen yang tahan air, warna dye untuk foto yang cerah.",
     reviews: [
       { name: "Perusahaan ABC", rating: 5, date: "10 Juni 2024", comment: "Untuk kebutuhan kantor, sangat memuaskan!" },
@@ -159,7 +161,7 @@ export const products: Product[] = [
     capacity: "140 ml",
     compatible: ["M100", "M105", "M200", "M205"],
     price: 245000,
-    imageUrl: "/images/products/774.jpeg",
+    imageUrl: getImageUrl("774.jpg", "epson"),
     description: "Epson 774 Tinta Hitam Pigment Original khusus untuk printer Monochrome Epson seri M. Hasil cetak super tajam, cepat kering, dan hemat biaya.",
     reviews: [
       { name: "Toko ATK Maju", rating: 5, date: "5 Juli 2024", comment: "Untuk kebutuhan cetak hitam, sangat ekonomis!" },
@@ -176,7 +178,7 @@ export const products: Product[] = [
     capacity: "1100 halaman",
     compatible: ["Epson WF-3720", "Epson WF-3725", "Epson WF-3730"],
     price: 285000,
-    imageUrl: "/images/products/702.jpeg",
+    imageUrl: getImageUrl("702.jpg", "epson"),
     description: "Cartridge Epson 702 Black Original memberikan kualitas cetak profesional untuk kebutuhan kantor. Hasil cetak tajam dan konsisten.",
     reviews: [
       { name: "Kantor XYZ", rating: 5, date: "1 Juli 2024", comment: "Cartridge awet dan hasilnya bagus!" }
@@ -192,7 +194,7 @@ export const products: Product[] = [
     capacity: "950 halaman (warna)",
     compatible: ["Epson WF-3720", "Epson WF-3725", "Epson WF-3730"],
     price: 325000,
-    imageUrl: "/images/products/703_tri.jpeg",
+    imageUrl: getImageUrl("703_tri.jpg", "epson"),
     description: "Cartridge Epson 703 Color Original untuk hasil cetak presentasi dan dokumen berwarna yang profesional.",
     reviews: [
       { name: "Ibu Siti", rating: 4, date: "25 Juni 2024", comment: "Warna cerah dan bagus untuk presentasi kantor!" }
@@ -209,7 +211,7 @@ export const products: Product[] = [
     capacity: "135 ml",
     compatible: ["G1000", "G1010", "G2000", "G2010", "G3000", "G3010"],
     price: 165000,
-    imageUrl: "/images/products/790_black.jpeg",
+    imageUrl: getImageUrl("790_black.jpg", "canon"),
     description: "Tinta Canon GI-790 Black Original khusus untuk printer Canon PIXMA seri G. Hasil cetak hitam yang pekat dan hemat biaya.",
     reviews: [
       { name: "Mama Rina", rating: 5, date: "10 Juli 2024", comment: "Cetak tugas anak-anak jadi hemat banget!" },
@@ -226,7 +228,7 @@ export const products: Product[] = [
     capacity: "70 ml per warna",
     compatible: ["G1000", "G1010", "G2000", "G2010", "G3000", "G3010"],
     price: 350000,
-    imageUrl: "/images/products/790_co.jpeg",
+    imageUrl: getImageUrl("790_co.jpg", "canon"),
     description: "Tinta Canon GI-790 Color Original untuk hasil cetak foto dan dokumen berwarna yang cerah dan natural.",
     reviews: [
       { name: "Siti Nurhaliza", rating: 5, date: "15 Juli 2024", comment: "Warna foto hasil cetakan sangat bagus!" }

@@ -1,6 +1,7 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
+"use client"
+import React, { useState, useEffect } from "react"
+import Link from "next/link"
+import Image from "next/image"
 import { Product, Review } from "@/lib/products";
 
 const WHATSAPP_NUMBER = "6285754008091";
@@ -10,20 +11,45 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+  const [customerName, setCustomerName] = useState('')
+  const [customerAddress, setCustomerAddress] = useState('')
+  const [quantity, setQuantity] = useState('')
+  const [notes, setNotes] = useState('')
+
   const handleOrder = () => {
-    const message = `Halo TintaPrinter.ID, saya ingin memesan produk berikut:\n\nNama Produk: ${product.name}\nHarga: Rp ${product.price.toLocaleString("id-ID")}\n\nMohon informasi lebih lanjut. Terima kasih!`;
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
-    window.open(whatsappUrl, "_blank");
+    let message = `Halo TintaPrinter.ID, saya ingin memesan produk berikut:\n\nNama Produk: ${product.name}\nHarga: Rp ${product.price.toLocaleString("id-ID")}\n`
+
+    if (quantity) {
+      message += `Jumlah: ${quantity}\n`
+    }
+
+    if (customerName) {
+      message += `Nama: ${customerName}\n`
+    }
+
+    if (customerAddress) {
+      message += `Alamat: ${customerAddress}\n`
+    }
+
+    if (notes) {
+      message += `Catatan: ${notes}\n`
+    }
+
+    message += `\nMohon informasi lebih lanjut. Terima kasih!`
+    
+    const encodedMessage = encodeURIComponent(message)
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`
+    window.open(whatsappUrl, "_blank")
   };
 
   // State for new review form
-  const [newReview, setNewReview] = useState<Omit<Review, 'date'>>({
+  const [newReview, setNewReview] = useState<Omit<Review, 'date'> & { address?: string }>({
     name: '',
     rating: 0,
     comment: '',
-  });
-  const [showForm, setShowForm] = useState(false);
+    address: '',
+  })
+  const [showForm, setShowForm] = useState(false)
   const [showAllReviews, setShowAllReviews] = useState(false);
   
   // Get reviews from localStorage
@@ -52,11 +78,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const handleSubmitReview = (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!newReview.name || !newReview.comment || newReview.rating === 0) {
-      alert('Mohon lengkapi semua kolom ulasan!');
-      return;
-    }
-    
     // Add date
     const today = new Date();
     const dateStr = today.toLocaleDateString('id-ID', {
@@ -64,7 +85,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       month: 'long',
       year: 'numeric'
     });
-    const reviewToAdd: Review = {
+    const reviewToAdd: Review & { address?: string } = {
       ...newReview,
       date: dateStr,
     };
@@ -75,13 +96,32 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     setLocalReviews(updatedLocalReviews);
     
     // Send to WhatsApp for verification
-    const reviewMessage = `Halo TintaPrinter.ID, ada ulasan baru dari pelanggan!\n\nProduk: ${product.name}\nNama: ${reviewToAdd.name}\nRating: ${'⭐'.repeat(reviewToAdd.rating)}\nUlasan: ${reviewToAdd.comment}\nTanggal: ${reviewToAdd.date}\n\nSilakan verifikasi dan tambahkan ke daftar ulasan produk.`;
+    let reviewMessage = `Halo TintaPrinter.ID, ada ulasan baru dari pelanggan!\n\nProduk: ${product.name}\n`
+    
+    if (reviewToAdd.name) {
+      reviewMessage += `Nama: ${reviewToAdd.name}\n`
+    }
+    
+    if (reviewToAdd.address) {
+      reviewMessage += `Alamat: ${reviewToAdd.address}\n`
+    }
+    
+    if (reviewToAdd.rating > 0) {
+      reviewMessage += `Rating: ${'⭐'.repeat(reviewToAdd.rating)}\n`
+    }
+    
+    if (reviewToAdd.comment) {
+      reviewMessage += `Ulasan: ${reviewToAdd.comment}\n`
+    }
+    
+    reviewMessage += `Tanggal: ${reviewToAdd.date}\n\nSilakan verifikasi dan tambahkan ke daftar ulasan produk.`
+    
     const encodedReview = encodeURIComponent(reviewMessage);
     const reviewWhatsAppUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedReview}`;
     window.open(reviewWhatsAppUrl, '_blank');
     
     // Reset form
-    setNewReview({ name: '', rating: 0, comment: '' });
+    setNewReview({ name: '', rating: 0, comment: '', address: '' });
     setShowForm(false);
   };
 
@@ -110,7 +150,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   };
 
   return (
-    <div className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-400 hover:-translate-y-2 border border-gray-100">
+    <Link href={`/products/${product.id}`}>
+      <div className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-400 hover:-translate-y-2 border border-gray-100 cursor-pointer">
       {/* Badges */}
       <div className="flex gap-2 mb-4">
         <div className={`inline-block bg-gradient-to-r ${categoryColors[product.category]} text-white text-xs font-bold px-3 py-1 rounded-full`}>
@@ -128,6 +169,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             src={product.imageUrl}
             alt={product.name}
             fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
             style={{ objectFit: "contain" }}
             className="rounded-xl"
             loading="lazy"
@@ -198,9 +240,61 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </p>
       </div>
       
+      {/* Form data pemesanan opsional */}
+      <div className="bg-gray-50 p-4 rounded-xl border border-gray-200 mb-4">
+        <h4 className="text-sm font-semibold text-gray-700 mb-3">Data Pemesanan (Opsional)</h4>
+        <div className="space-y-3">
+          <div>
+            <label className="block text-xs font-medium text-gray-700 mb-1">Jumlah Pesanan</label>
+            <input
+              type="number"
+              value={quantity}
+              onChange={(e) => setQuantity(e.target.value)}
+              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Masukkan jumlah pesanan"
+              min="1"
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-medium text-gray-700 mb-1">Nama Anda</label>
+            <input
+              type="text"
+              value={customerName}
+              onChange={(e) => setCustomerName(e.target.value)}
+              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Masukkan nama Anda"
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-medium text-gray-700 mb-1">Alamat Pengiriman</label>
+            <textarea
+              value={customerAddress}
+              onChange={(e) => setCustomerAddress(e.target.value)}
+              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              rows={2}
+              placeholder="Masukkan alamat lengkap Anda"
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-medium text-gray-700 mb-1">Catatan (Nego Harga, dll)</label>
+            <textarea
+              value={notes}
+              onChange={(e) => setNotes(e.target.value)}
+              className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              rows={2}
+              placeholder="Masukkan catatan seperti nego harga atau keterangan lainnya"
+            />
+          </div>
+        </div>
+      </div>
+
       {/* Order button */}
       <button
-        onClick={handleOrder}
+        onClick={(e) => {
+          e.preventDefault()
+          e.stopPropagation()
+          handleOrder()
+        }}
         className="w-full py-4 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-xl font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
       >
         <i className="fab fa-whatsapp text-xl"></i>
@@ -225,13 +319,23 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         {showForm && (
           <form onSubmit={handleSubmitReview} className="mb-4 p-4 bg-gray-50 rounded-lg border border-gray-200">
             <div className="mb-3">
-              <label className="block text-xs font-medium text-gray-700 mb-1">Nama Kamu</label>
+              <label className="block text-xs font-medium text-gray-700 mb-1">Nama Kamu (Opsional)</label>
               <input
                 type="text"
                 value={newReview.name}
                 onChange={(e) => setNewReview({ ...newReview, name: e.target.value })}
                 className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
                 placeholder="Masukkan nama kamu"
+              />
+            </div>
+            <div className="mb-3">
+              <label className="block text-xs font-medium text-gray-700 mb-1">Alamat Kamu (Opsional)</label>
+              <textarea
+                value={newReview.address}
+                onChange={(e) => setNewReview({ ...newReview, address: e.target.value })}
+                className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                rows={2}
+                placeholder="Masukkan alamat kamu (jika ingin dikirim ke rumah)"
               />
             </div>
             <div className="mb-3">
@@ -250,7 +354,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               </div>
             </div>
             <div className="mb-3">
-              <label className="block text-xs font-medium text-gray-700 mb-1">Ulasan</label>
+              <label className="block text-xs font-medium text-gray-700 mb-1">Ulasan (Opsional)</label>
               <textarea
                 value={newReview.comment}
                 onChange={(e) => setNewReview({ ...newReview, comment: e.target.value })}
@@ -261,6 +365,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             </div>
             <button
               type="submit"
+              onClick={(e) => {
+                e.stopPropagation()
+              }}
               className="w-full py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg font-bold text-sm hover:shadow-md transition-all"
             >
               <i className="fab fa-whatsapp mr-2"></i> Kirim Ulasan via WhatsApp
@@ -320,7 +427,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         )}
       </div>
     </div>
-  );
+    </Link>
+  )
 };
 
 export default ProductCard;

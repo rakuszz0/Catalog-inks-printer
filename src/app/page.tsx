@@ -38,7 +38,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <HeroCarousel onButtonClick={(filter) => setActiveFilter(filter)} />
+      <section id="home">
+        <HeroCarousel onButtonClick={(filter) => setActiveFilter(filter)} />
+      </section>
       <AboutUs />
       <section id="catalog" className="py-16">
         <div className="container mx-auto px-4">
