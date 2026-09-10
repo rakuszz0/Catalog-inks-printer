@@ -11,7 +11,7 @@ const brandPlaceholders: Record<string, string> = {
 }
 
 // Set this to false when you've uploaded all your images to Cloudinary!
-const USE_FALLBACK = true // Ubah ke false ketika semua gambar sudah diupload ke Cloudinary
+const USE_FALLBACK = false // Ubah ke false ketika semua gambar sudah diupload ke Cloudinary
 
 export function getImageUrl(
   filename: string,
