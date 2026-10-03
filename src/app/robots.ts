@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://duniacartridge.net/sitemap.xml',
+    sitemap: 'https://duniacartridge.my.id/sitemap.xml',
   }
 }
