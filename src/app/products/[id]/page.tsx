@@ -72,18 +72,14 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="relative">
-            <div className={`flex items-center justify-center w-full aspect-square bg-gradient-to-br ${brandColors[product.brand]}/10 rounded-2xl`}>
-              <div className="text-center p-4">
-                <div className="relative w-full h-80 flex items-center justify-center">
-                  <Image
-                    src={product.imageUrl}
-                    alt={product.name}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-contain"
-                  />
-                </div>
-              </div>
+            <div className={`relative w-full aspect-square bg-gradient-to-br ${brandColors[product.brand]}/10 rounded-2xl`}>
+              <Image
+                src={product.imageUrl}
+                alt={product.name}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-contain p-4"
+              />
             </div>
 
             <div className="flex gap-3 mt-4">
