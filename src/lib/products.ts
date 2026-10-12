@@ -674,22 +674,6 @@ export const products: Product[] = [
   ]
   },
   {
-  id: "215a-hitam-ekonomis",
-  name: "HP 215A Black Toner",
-  brand: "hp",
-  category: "toner",
-  color: "Hitam",
-  type: "Toner Original",
-  capacity: "1050 halaman",
-  compatible: ["HP Color LaserJet Pro M155", "HP Color LaserJet Pro MFP M182", "HP Color LaserJet Pro MFP M183"],
-  price: 950000,
-  imageUrl: getImageUrl("215A_B.JPG", "hp"),
-  description: "Toner HP 215A Black Original untuk printer laser HP.",
-  reviews: [
-    { name: "Kantor Andalan", rating: 5, date: "25 Juni 2024", comment: "Toner HP yang paling populer!" }
-  ]
-  },
-  {
   id: "206a-color-set",
   name: "HP 206A Color Set",
   brand: "hp",
