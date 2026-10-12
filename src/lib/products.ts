@@ -206,28 +206,28 @@ export const products: Product[] = [
     id: "canon-pg-745",
     name: "Canon PG-745 Black",
     brand: "canon",
-    category: "cartridge",
+    category: "tinta",
     color: "Hitam",
-    type: "Cartridge Original",
+    type: "Tinta Original",
     capacity: "180 halaman",
     compatible: ["MG2570", "MG2570S", "MG3070", "MG3070S"],
-    price: 245000,
+    price: 275000,
     imageUrl: getImageUrl("PG_745.JPG", "canon"),
-    description: "Cartridge Canon PG-745 Black Original.",
+    description: "Tinta Canon PG-745 Black Original.",
     reviews: []
   },
   {
     id: "canon-cl-746",
     name: "Canon CL-746 Color",
     brand: "canon",
-    category: "cartridge",
+    category: "tinta",
     color: "Tri-color",
-    type: "Cartridge Original",
+    type: "Tinta Original",
     capacity: "180 halaman",
     compatible: ["MG2570", "MG2570S", "MG3070", "MG3070S"],
     price: 325000,
     imageUrl: getImageUrl("CL_746.JPG", "canon"),
-    description: "Cartridge Canon CL-746 Color Original.",
+    description: "Tinta Canon CL-746 Color Original.",
     reviews: []
   },
   {
@@ -256,7 +256,7 @@ export const products: Product[] = [
     type: "Tinta Original",
     capacity: "70 ml per warna",
     compatible: ["G1000", "G1010", "G2000", "G2010", "G3000", "G3010"],
-    price: 135000,
+    price: 450000,
     imageUrl: getImageUrl("790_co.JPG", "canon"),
     description: "Tinta Canon GI-790 Color Original untuk hasil cetak foto dan dokumen berwarna yang cerah dan natural.",
     reviews: [
@@ -267,14 +267,14 @@ export const products: Product[] = [
     id: "canon-71-black",
     name: "Canon PG-71 Black",
     brand: "canon",
-    category: "cartridge",
+    category: "tinta",
     color: "Hitam",
-    type: "Cartridge Original",
+    type: "Tinta Original",
     capacity: "150 halaman",
     compatible: ["E500", "E510", "E600", "E610"],
     price: 180000,
     imageUrl: getImageUrl("pgbk_71.JPG", "canon"),
-    description: "Cartridge Canon PG-71 Black Original untuk printer PIXMA seri E. Mudah dipasang dan hasil cetak bagus.",
+    description: "Tinta Canon PG-71 Black Original untuk printer PIXMA seri E. Mudah dipasang dan hasil cetak bagus.",
     reviews: [
       { name: "Adit", rating: 4, date: "2 Juli 2024", comment: "Gampang dipasang, hasilnya jelas!" }
     ]
@@ -283,50 +283,50 @@ export const products: Product[] = [
     id: "canon-71-color",
     name: "Canon CL-71 Color",
     brand: "canon",
-    category: "cartridge",
+    category: "tinta",
     color: "Tri-color",
-    type: "Cartridge Original",
+    type: "Tinta Original",
     capacity: "130 halaman",
     compatible: ["E500", "E510", "E600", "E610"],
-    price: 145000,
+    price: 450000,
     imageUrl: getImageUrl("CL_71.JPG", "canon"),
-    description: "Cartridge Canon CL-71 Color Original untuk hasil cetak berwarna yang cerah.",
+    description: "Tinta Canon CL-71 Color Original untuk hasil cetak berwarna yang cerah.",
     reviews: [
       { name: "Diana", rating: 5, date: "20 Juni 2024", comment: "Warna-warnanya cerah banget!" }
     ]
   },
-  {
-    id: "canon-pg-545",
-    name: "Canon PG-545 Black",
-    brand: "canon",
-    category: "cartridge",
-    color: "Hitam",
-    type: "Cartridge Original",
-    capacity: "180 halaman",
-    compatible: ["MG2550", "MG2555", "MG3050", "TS3150"],
-    price: 245000,
-    imageUrl: getImageUrl("PG_545.JPG", "canon"),
-    description: "Cartridge Canon PG-545 Black Original untuk printer PIXMA home user.",
-    reviews: [
-      { name: "Keluarga Ahmad", rating: 4, date: "28 Juni 2024", comment: "Cocok untuk kebutuhan rumah tangga!" }
-    ]
-  },
-  {
-    id: "canon-cl-546",
-    name: "Canon CL-546 Color",
-    brand: "canon",
-    category: "cartridge",
-    color: "Tri-color",
-    type: "Cartridge Original",
-    capacity: "180 halaman",
-    compatible: ["MG2550", "MG2555", "MG3050", "TS3150"],
-    price: 325000,
-    imageUrl: getImageUrl("CL_546.JPG", "canon"),
-    description: "Cartridge Canon CL-546 Color Original untuk mencetak foto dan dokumen berwarna.",
-    reviews: [
-      { name: "Anak-Anak", rating: 5, date: "10 Juli 2024", comment: "Cetak foto-foto liburan jadi jelas!" }
-    ]
-  },
+  // {
+  //   id: "canon-pg-545",
+  //   name: "Canon PG-545 Black",
+  //   brand: "canon",
+  //   category: "cartridge",
+  //   color: "Hitam",
+  //   type: "Cartridge Original",
+  //   capacity: "180 halaman",
+  //   compatible: ["MG2550", "MG2555", "MG3050", "TS3150"],
+  //   price: 245000,
+  //   imageUrl: getImageUrl("PG_545.JPG", "canon"),
+  //   description: "Cartridge Canon PG-545 Black Original untuk printer PIXMA home user.",
+  //   reviews: [
+  //     { name: "Keluarga Ahmad", rating: 4, date: "28 Juni 2024", comment: "Cocok untuk kebutuhan rumah tangga!" }
+  //   ]
+  // },
+  // {
+  //   id: "canon-cl-546",
+  //   name: "Canon CL-546 Color",
+  //   brand: "canon",
+  //   category: "cartridge",
+  //   color: "Tri-color",
+  //   type: "Cartridge Original",
+  //   capacity: "180 halaman",
+  //   compatible: ["MG2550", "MG2555", "MG3050", "TS3150"],
+  //   price: 325000,
+  //   imageUrl: getImageUrl("CL_546.JPG", "canon"),
+  //   description: "Cartridge Canon CL-546 Color Original untuk mencetak foto dan dokumen berwarna.",
+  //   reviews: [
+  //     { name: "Anak-Anak", rating: 5, date: "10 Juli 2024", comment: "Cetak foto-foto liburan jadi jelas!" }
+  //   ]
+  // },
   {
     id: "canon-pg-47",
     name: "Canon PG-47 Black",
@@ -336,7 +336,7 @@ export const products: Product[] = [
     type: "Cartridge Original",
     capacity: "400 halaman",
     compatible: ["E400", "E410", "E460", "E470"],
-    price: 180000,
+    price: 220000,
     imageUrl: getImageUrl("PG_47.JPG", "canon"),
     description: "Cartridge Canon PG-47 Black Original dengan kapasitas besar.",
     reviews: [
@@ -366,7 +366,7 @@ export const products: Product[] = [
     type: "Cartridge Original",
     capacity: "220 halaman",
     compatible: ["MP258", "MP287", "MP497", "MX328"],
-    price: 245000,
+    price: 265000,
     imageUrl: getImageUrl("PG_810.JPG", "canon"),
     description: "Cartridge Canon PG-810 Black Original.",
     reviews: [
@@ -387,38 +387,38 @@ export const products: Product[] = [
     description: "Cartridge Canon CL-811 Color Original.",
     reviews: []
   },
-  {
-    id: "canon-328",
-    name: "Canon 328 Toner",
-    brand: "canon",
-    category: "toner",
-    color: "Hitam",
-    type: "Toner Original",
-    capacity: "2100 halaman",
-    compatible: ["MF4410", "MF4450", "MF4710"],
-    price: 800000,
-    imageUrl: getImageUrl("Canon_328.JPG", "canon"),
-    description: "Toner Canon 328 Original untuk printer laser monochrome.",
-    reviews: [
-      { name: "Kantor Makmur", rating: 5, date: "25 Juli 2024", comment: "Untuk kebutuhan kantor, toner ini sangat awet!" }
-    ]
-  },
-  {
-    id: "canon-337",
-    name: "Canon 337 Toner",
-    brand: "canon",
-    category: "toner",
-    color: "Hitam",
-    type: "Toner Original",
-    capacity: "2400 halaman",
-    compatible: ["MF211", "MF212", "MF215", "MF217"],
-    price: 850000,
-    imageUrl: getImageUrl("Canon_337.JPG", "canon"),
-    description: "Toner Canon 337 Original dengan kapasitas lebih besar.",
-    reviews: [
-      { name: "Perusahaan Jaya", rating: 5, date: "15 Juli 2024", comment: "Kapasitas besar, hemat!" }
-    ]
-  },
+  // {
+  //   id: "canon-328",
+  //   name: "Canon 328 Toner",
+  //   brand: "canon",
+  //   category: "toner",
+  //   color: "Hitam",
+  //   type: "Toner Original",
+  //   capacity: "2100 halaman",
+  //   compatible: ["MF4410", "MF4450", "MF4710"],
+  //   price: 800000,
+  //   imageUrl: getImageUrl("Canon_328.JPG", "canon"),
+  //   description: "Toner Canon 328 Original untuk printer laser monochrome.",
+  //   reviews: [
+  //     { name: "Kantor Makmur", rating: 5, date: "25 Juli 2024", comment: "Untuk kebutuhan kantor, toner ini sangat awet!" }
+  //   ]
+  // },
+  // {
+  //   id: "canon-337",
+  //   name: "Canon 337 Toner",
+  //   brand: "canon",
+  //   category: "toner",
+  //   color: "Hitam",
+  //   type: "Toner Original",
+  //   capacity: "2400 halaman",
+  //   compatible: ["MF211", "MF212", "MF215", "MF217"],
+  //   price: 850000,
+  //   imageUrl: getImageUrl("Canon_337.JPG", "canon"),
+  //   description: "Toner Canon 337 Original dengan kapasitas lebih besar.",
+  //   reviews: [
+  //     { name: "Perusahaan Jaya", rating: 5, date: "15 Juli 2024", comment: "Kapasitas besar, hemat!" }
+  //   ]
+  // },
   // Brother
   {
     id: "brother-bt5000",
@@ -429,7 +429,7 @@ export const products: Product[] = [
     type: "Original",
     capacity: "1500 halaman",
     compatible: ["T300", "T500", "T700", "T800"],
-    price: 140000,
+    price: 450000,
     imageUrl: getImageUrl("BT5000.JPG", "brother"),
     description: "Tinta Brother BT5000 Original Color Set untuk printer Brother seri T. Hasil warna cerah dan hemat.",
     reviews: [
@@ -467,36 +467,36 @@ export const products: Product[] = [
       { name: "Percetakan Ceria", rating: 5, date: "10 Juli 2024", comment: "Untuk percetakan rumahan, sangat hemat!" }
     ]
   },
-  {
-    id: "brother-lc223",
-    name: "Brother LC-223BK Black",
-    brand: "brother",
-    category: "cartridge",
-    color: "Hitam",
-    type: "Cartridge Original",
-    capacity: "550 halaman",
-    compatible: ["DCP-J4120DW", "MFC-J4420DW", "MFC-J4620DW"],
-    price: 210000,
-    imageUrl: getImageUrl("LC_223BK.JPG", "brother"),
-    description: "Cartridge Brother LC-223BK Original.",
-    reviews: [
-      { name: "Kantor Kita", rating: 4, date: "20 Juni 2024", comment: "Cocok untuk kebutuhan kantor kecil!" }
-    ]
-  },
-  {
-    id: "brother-lc223-cmy",
-    name: "Brother LC-223 CMY Color Pack",
-    brand: "brother",
-    category: "cartridge",
-    color: "Cyan, Magenta, Kuning",
-    type: "Cartridge Original",
-    capacity: "550 halaman",
-    compatible: ["DCP-J4120DW", "MFC-J4420DW", "MFC-J4620DW"],
-    price: 420000,
-    imageUrl: getImageUrl("LC_223_CMY.JPG", "brother"),
-    description: "Paket cartridge Brother LC-223 warna lengkap.",
-    reviews: []
-  },
+  // {
+  //   id: "brother-lc223",
+  //   name: "Brother LC-223BK Black",
+  //   brand: "brother",
+  //   category: "cartridge",
+  //   color: "Hitam",
+  //   type: "Cartridge Original",
+  //   capacity: "550 halaman",
+  //   compatible: ["DCP-J4120DW", "MFC-J4420DW", "MFC-J4620DW"],
+  //   price: 210000,
+  //   imageUrl: getImageUrl("LC_223BK.JPG", "brother"),
+  //   description: "Cartridge Brother LC-223BK Original.",
+  //   reviews: [
+  //     { name: "Kantor Kita", rating: 4, date: "20 Juni 2024", comment: "Cocok untuk kebutuhan kantor kecil!" }
+  //   ]
+  // },
+  // {
+  //   id: "brother-lc223-cmy",
+  //   name: "Brother LC-223 CMY Color Pack",
+  //   brand: "brother",
+  //   category: "cartridge",
+  //   color: "Cyan, Magenta, Kuning",
+  //   type: "Cartridge Original",
+  //   capacity: "550 halaman",
+  //   compatible: ["DCP-J4120DW", "MFC-J4420DW", "MFC-J4620DW"],
+  //   price: 420000,
+  //   imageUrl: getImageUrl("LC_223_CMY.JPG", "brother"),
+  //   description: "Paket cartridge Brother LC-223 warna lengkap.",
+  //   reviews: []
+  // },
   {
     id: "brother-tn2260",
     name: "Brother TN-2260 Toner",
@@ -537,7 +537,7 @@ export const products: Product[] = [
     type: "Tinta Original",
     capacity: "90 ml",
     compatible: ["Ink Tank 115", "315", "415", "500", "515", "530", "615"],
-    price: 150000,
+    price: 400000,
     imageUrl: getImageUrl("GT53.JPG", "hp"),
     description: "Tinta HP GT53 Black Original untuk printer HP Ink Tank. Hasil hitam pekat dan hemat.",
     reviews: [
@@ -562,6 +562,166 @@ export const products: Product[] = [
     ]
   },
   {
+  id: "hp-80a",
+  name: "HP 80A Black Toner",
+  brand: "hp",
+  category: "toner",
+  color: "Hitam",
+  type: "Toner Original",
+  capacity: "6900 halaman",
+  compatible: ["HP LaserJet Pro 400 M401", "HP LaserJet Pro 400 MFP M425"],
+  price: 2500000,
+  imageUrl: getImageUrl("80A_B.JPG", "hp"),
+  description: "Toner HP 80A Original (CE280A) untuk printer laser HP.",
+  reviews: [
+    { name: "Kantor Andalan", rating: 5, date: "25 Juni 2024", comment: "Toner HP yang paling populer!" }
+  ]
+  },
+  {
+  id: "hp-76a",
+  name: "HP 76A Black Toner",
+  brand: "hp",
+  category: "toner",
+  color: "Hitam",
+  type: "Toner Original",
+  capacity: "3000 halaman",
+  compatible: ["HP LaserJet Pro M404", "HP LaserJet Pro MFP M428"],
+  price: 2000000,
+  imageUrl: getImageUrl("76A_B.JPG", "hp"),
+  description: "Toner HP 76A Original (CE276A) untuk printer laser HP.",
+  reviews: [
+    { name: "Kantor Andalan", rating: 5, date: "25 Juni 2024", comment: "Toner HP yang paling populer!" }
+  ]
+  },
+  {
+  id: "230a-color-set",
+  name: "HP 230A Color Set",
+  brand: "hp",
+  category: "toner",
+  color: "Cyan, Magenta, Yellow",
+  type: "Toner Original",
+  capacity: "1800 halaman",
+  compatible: ["HP Color LaserJet Pro 4203", "HP Color LaserJet Pro MFP 4303"],
+  price: 5850000,
+  imageUrl: getImageUrl("203A_C.JPG", "hp"),
+  description: "Toner HP 230A Color Original untuk printer laser HP.",
+  reviews: [
+    { name: "Kantor Andalan", rating: 5, date: "25 Juni 2024", comment: "Toner HP yang paling populer!" }
+  ]
+  },
+  {
+  id: "230a-hitam",
+  name: "HP 230A Black Toner",
+  brand: "hp",
+  category: "toner",
+  color: "Hitam",
+  type: "Toner Original",
+  capacity: "2000 halaman",
+  compatible: ["HP Color LaserJet Pro 4203", "HP Color LaserJet Pro MFP 4303"],
+  price: 1600000,
+  imageUrl: getImageUrl("203A_B.JPG", "hp"),
+  description: "Toner HP 230A Black Original untuk printer laser HP.",
+  reviews: [
+    { name: "Kantor Andalan", rating: 5, date: "25 Juni 2024", comment: "Toner HP yang paling populer!" }
+  ]
+  },
+  {
+  id: "215a-color-set",
+  name: "HP 215A Color Set",
+  brand: "hp",
+  category: "toner",
+  color: "Cyan, Magenta, Yellow",
+  type: "Toner Original",
+  capacity: "700 halaman",
+  compatible: ["HP Color LaserJet Pro M155", "HP Color LaserJet Pro MFP M182", "HP Color LaserJet Pro MFP M183"],
+  price: 4050000,
+  imageUrl: getImageUrl("215A_C.JPG", "hp"),
+  description: "Toner HP 215A Color Original untuk printer laser HP.",
+  reviews: [
+    { name: "Kantor Andalan", rating: 5, date: "25 Juni 2024", comment: "Toner HP yang paling populer!" }
+  ]
+  },
+  {
+  id: "215a-hitam",
+  name: "HP 215A Black Toner",
+  brand: "hp",
+  category: "toner",
+  color: "Hitam",
+  type: "Toner Original",
+  capacity: "1050 halaman",
+  compatible: ["HP Color LaserJet Pro M155", "HP Color LaserJet Pro MFP M182", "HP Color LaserJet Pro MFP M183"],
+  price: 1250000,
+  imageUrl: getImageUrl("215A_B.JPG", "hp"),
+  description: "Toner HP 215A Black Original untuk printer laser HP.",
+  reviews: [
+    { name: "Kantor Andalan", rating: 5, date: "25 Juni 2024", comment: "Toner HP yang paling populer!" }
+  ]
+  },
+  {
+  id: "119a-color-set",
+  name: "HP 119A Color Set",
+  brand: "hp",
+  category: "toner",
+  color: "Cyan, Magenta, Yellow",
+  type: "Toner Original",
+  capacity: "700 halaman",
+  compatible: ["HP Color Laser 150a", "HP Color Laser 150nw", "HP Color Laser MFP 178nw", "HP Color Laser MFP 179fnw"],
+  price: 2850000,
+  imageUrl: getImageUrl("119A_C.JPG", "hp"),
+  description: "Toner HP 119A Color Original untuk printer laser HP.",
+  reviews: [
+    { name: "Kantor Andalan", rating: 5, date: "25 Juni 2024", comment: "Toner HP yang paling populer!" }
+  ]
+  },
+  {
+  id: "215a-hitam-ekonomis",
+  name: "HP 215A Black Toner",
+  brand: "hp",
+  category: "toner",
+  color: "Hitam",
+  type: "Toner Original",
+  capacity: "1050 halaman",
+  compatible: ["HP Color LaserJet Pro M155", "HP Color LaserJet Pro MFP M182", "HP Color LaserJet Pro MFP M183"],
+  price: 950000,
+  imageUrl: getImageUrl("215A_B.JPG", "hp"),
+  description: "Toner HP 215A Black Original untuk printer laser HP.",
+  reviews: [
+    { name: "Kantor Andalan", rating: 5, date: "25 Juni 2024", comment: "Toner HP yang paling populer!" }
+  ]
+  },
+  {
+  id: "206a-color-set",
+  name: "HP 206A Color Set",
+  brand: "hp",
+  category: "toner",
+  color: "Cyan, Magenta, Yellow",
+  type: "Toner Original",
+  capacity: "1250 halaman",
+  compatible: ["HP Color LaserJet Pro M255", "HP Color LaserJet Pro MFP M282", "HP Color LaserJet Pro MFP M283"],
+  price: 4950000,
+  imageUrl: getImageUrl("206A_C.JPG", "hp"),
+  description: "Toner HP 206A Color Original untuk printer laser HP.",
+  reviews: [
+    { name: "Kantor Andalan", rating: 5, date: "25 Juni 2024", comment: "Toner HP yang paling populer!" }
+  ]
+  },
+  {
+  id: "206a-hitam",
+  name: "HP 206A Black Toner",
+  brand: "hp",
+  category: "toner",
+  color: "Hitam",
+  type: "Toner Original",
+  capacity: "1350 halaman",
+  compatible: ["HP Color LaserJet Pro M255", "HP Color LaserJet Pro MFP M282", "HP Color LaserJet Pro MFP M283"],
+  price: 1450000,
+  imageUrl: getImageUrl("206A_B.JPG", "hp"),
+  description: "Toner HP 206A Black Original untuk printer laser HP.",
+  reviews: [
+    { name: "Kantor Andalan", rating: 5, date: "25 Juni 2024", comment: "Toner HP yang paling populer!" }
+  ]
+  },
+  {
     id: "hp-85a",
     name: "HP 85A Black Toner",
     brand: "hp",
@@ -576,8 +736,8 @@ export const products: Product[] = [
     reviews: [
       { name: "Kantor Andalan", rating: 5, date: "25 Juni 2024", comment: "Toner HP yang paling populer!" }
     ]
-  },
-  {
+    },
+    {
     id: "hp-12a",
     name: "HP 12A Black Toner",
     brand: "hp",
@@ -593,8 +753,8 @@ export const products: Product[] = [
       { name: "Pak Budi", rating: 5, date: "10 Juli 2024", comment: "Toner ini legendaris! Sudah puluhan tahun dipakai!" },
       { name: "Toko ATK Kita", rating: 5, date: "5 Juli 2024", comment: "Terlaris di toko!" }
     ]
-  },
-  {
+    },
+    {
     id: "hp-78a",
     name: "HP 78A Black Toner",
     brand: "hp",
@@ -607,8 +767,8 @@ export const products: Product[] = [
     imageUrl: getImageUrl("78A.JPG", "hp"),
     description: "Toner HP 78A Original (CE278A).",
     reviews: []
-  },
-  {
+    },
+    {
     id: "hp-79a",
     name: "HP 79A Black Toner",
     brand: "hp",
@@ -621,8 +781,8 @@ export const products: Product[] = [
     imageUrl: getImageUrl("79A.JPG", "hp"),
     description: "Toner HP 79A Original (CF279A).",
     reviews: []
-  },
-  {
+    },
+    {
     id: "hp-17a",
     name: "HP 17A Black Toner",
     brand: "hp",
@@ -637,8 +797,8 @@ export const products: Product[] = [
     reviews: [
       { name: "Kantor Kecil", rating: 4, date: "1 Juli 2024", comment: "Untuk printer baru, works perfectly!" }
     ]
-  },
-  {
+    },
+    {
     id: "hp-83a",
     name: "HP 83A Black Toner",
     brand: "hp",
@@ -651,8 +811,8 @@ export const products: Product[] = [
     imageUrl: getImageUrl("83A.JPG", "hp"),
     description: "Toner HP 83A Original (CF283A).",
     reviews: []
-  },
-  {
+    },
+    {
     id: "hp-107a",
     name: "HP 107A Black Toner",
     brand: "hp",
@@ -667,8 +827,8 @@ export const products: Product[] = [
     reviews: [
       { name: "Andi User Baru", rating: 5, date: "2 Juli 2024", comment: "Untuk printer baru saya, hasilnya bagus!" }
     ]
-  },
-  {
+    },
+    {
     id: "hp-416a-black",
     name: "HP 416A Black Toner",
     brand: "hp",
@@ -683,8 +843,8 @@ export const products: Product[] = [
     reviews: [
       { name: "Kantor Marketing", rating: 5, date: "15 Juli 2024", comment: "Untuk kebutuhan marketing, warna-warna bagus!" }
     ]
-  },
-  {
+    },
+    {
     id: "hp-416a-color",
     name: "HP 416A Color Toner Set",
     brand: "hp",
@@ -693,14 +853,14 @@ export const products: Product[] = [
     type: "Toner Original",
     capacity: "2400 halaman (hitam), 2100 halaman (warna)",
     compatible: ["M454dn", "M454dw", "M454nw", "MFP M479dw", "M479fdw", "M479fnw"],
-    price: 2250000,
+    price: 6750000,
     imageUrl: getImageUrl("416A_CO.JPG", "hp"),
     description: "Toner HP 416A Original Color Set untuk printer laser warna.",
     reviews: [
       { name: "Kantor Marketing", rating: 5, date: "15 Juli 2024", comment: "Untuk kebutuhan marketing, warna-warna bagus!" }
     ]
-  },
-  {
+    },
+    {
     id: "hp-410a-black",
     name: "HP 410A Black Toner",
     brand: "hp",
@@ -713,8 +873,8 @@ export const products: Product[] = [
     imageUrl: getImageUrl("410A_BL.JPG", "hp"),
     description: "Toner HP 410A Original Color Set.",
     reviews: []
-  },
-  {
+    },
+    {
     id: "hp-410a-color",
     name: "HP 410A Color Toner Set",
     brand: "hp",
@@ -723,12 +883,12 @@ export const products: Product[] = [
     type: "Toner Original",
     capacity: "2300 halaman (hitam), 2200 halaman (warna)",
     compatible: ["M452dn", "M452dw", "M452nw", "MFP M477fdn", "M477fdw", "M477fnw"],
-    price: 2100000,
+    price: 6300000,
     imageUrl: getImageUrl("410A_CL.JPG", "hp"),
     description: "Toner HP 410A Original Color Set.",
     reviews: []
-  },
-  {
+    },
+    {
     id: "hp-680",
     name: "HP 680 Black Cartridge",
     brand: "hp",

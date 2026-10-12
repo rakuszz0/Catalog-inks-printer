@@ -150,8 +150,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   };
 
   return (
-    <Link href={`/products/${product.id}`}>
-      <div className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-400 hover:-translate-y-2 border border-gray-100 cursor-pointer">
+    <div className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-400 border border-gray-100">
       {/* Badges */}
       <div className="flex gap-2 mb-4">
         <div className={`inline-block bg-gradient-to-r ${categoryColors[product.category]} text-white text-xs font-bold px-3 py-1 rounded-full`}>
@@ -163,7 +162,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       </div>
       
       {/* Product image with lazy loading */}
-      <div className={`text-center mb-6 p-4 bg-gradient-to-br ${brandColors[product.brand]}/10 rounded-2xl overflow-hidden`}>
+      <Link href={`/products/${product.id}`} aria-label={`Lihat detail ${product.name}`} className={`block text-center mb-6 p-4 bg-gradient-to-br ${brandColors[product.brand]}/10 rounded-2xl overflow-hidden`}>
         <div className="relative w-full h-48 flex items-center justify-center">
           <Image
             src={product.imageUrl}
@@ -181,11 +180,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <i className={`${product.category === "toner" ? "fas fa-microchip" : product.category === "cartridge" ? "fas fa-box" : "fas fa-tint"} text-7xl bg-gradient-to-r ${brandColors[product.brand]} bg-clip-text text-transparent`}></i>
           </div>
         )}
-      </div>
+      </Link>
       
       {/* Product name */}
       <h3 className="text-xl font-bold text-center mb-2 text-gray-800 leading-tight">
-        {product.name}
+        <Link href={`/products/${product.id}`} className="hover:text-indigo-700">
+          {product.name}
+        </Link>
       </h3>
 
       {/* Rating */}
@@ -426,8 +427,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <p className="text-sm text-gray-500 text-center">Jadilah yang pertama memberikan ulasan!</p>
         )}
       </div>
-    </div>
-    </Link>
+      </div>
   )
 };
 

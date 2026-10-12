@@ -8,7 +8,10 @@ import { products, type Product, type Review } from "@/lib/products"
 const WHATSAPP_NUMBER = "6285754008091"
 
 export default function ProductDetailPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params)
+  const { id: rawId } = use(params)
+  // Decode URL-encoded characters (e.g. %20 -> space) and normalize spaces to hyphens
+  // so both old links (with spaces) and new links (with hyphens) work correctly.
+  const id = decodeURIComponent(rawId).replace(/\s+/g, "-")
   const product = products.find(p => p.id === id)
 
   if (!product) {
