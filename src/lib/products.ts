@@ -170,22 +170,6 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "epson-702-black",
-    name: "Epson 702 Black Cartridge",
-    brand: "epson",
-    category: "cartridge",
-    color: "Hitam",
-    type: "Cartridge Original",
-    capacity: "1100 halaman",
-    compatible: ["Epson WF-3720", "Epson WF-3725", "Epson WF-3730"],
-    price: 285000,
-    imageUrl: getImageUrl("702.JPG", "epson"),
-    description: "Cartridge Epson 702 Black Original memberikan kualitas cetak profesional untuk kebutuhan kantor. Hasil cetak tajam dan konsisten.",
-    reviews: [
-      { name: "Kantor XYZ", rating: 5, date: "1 Juli 2024", comment: "Cartridge awet dan hasilnya bagus!" }
-    ]
-  },
-  {
     id: "epson-703-color",
     name: "Epson 703 Tri-Color",
     brand: "epson",
@@ -537,7 +521,7 @@ export const products: Product[] = [
     type: "Tinta Original",
     capacity: "90 ml",
     compatible: ["Ink Tank 115", "315", "415", "500", "515", "530", "615"],
-    price: 400000,
+    price: 130000,
     imageUrl: getImageUrl("GT53.JPG", "hp"),
     description: "Tinta HP GT53 Black Original untuk printer HP Ink Tank. Hasil hitam pekat dan hemat.",
     reviews: [
@@ -554,7 +538,7 @@ export const products: Product[] = [
     type: "Tinta Original",
     capacity: "70 ml per warna",
     compatible: ["Ink Tank 115", "315", "415", "500", "515", "530", "615"],
-    price: 130000,
+    price: 400000,
     imageUrl: getImageUrl("GT52C.JPG", "hp"),
     description: "Tinta HP GT52 Color Original untuk hasil warna cerah dan natural.",
     reviews: [
@@ -669,6 +653,22 @@ export const products: Product[] = [
   price: 2850000,
   imageUrl: getImageUrl("119A_C.JPG", "hp"),
   description: "Toner HP 119A Color Original untuk printer laser HP.",
+  reviews: [
+    { name: "Kantor Andalan", rating: 5, date: "25 Juni 2024", comment: "Toner HP yang paling populer!" }
+  ]
+  },
+  {
+  id: "119a-hitam",
+  name: "HP 119A Black Toner",
+  brand: "hp",
+  category: "toner",
+  color: "Hitam",
+  type: "Toner Original",
+  capacity: "1000 halaman",
+  compatible: ["HP Color Laser 150a", "HP Color Laser 150nw", "HP Color Laser MFP 178nw", "HP Color Laser MFP 179fnw"],
+  price: 950000,
+  imageUrl: getImageUrl("119A_B.JPG", "hp"),
+  description: "Toner HP 119A Black Original untuk printer laser HP.",
   reviews: [
     { name: "Kantor Andalan", rating: 5, date: "25 Juni 2024", comment: "Toner HP yang paling populer!" }
   ]
