@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TintaPrinter.ID - Katalog Tinta Printer",
+  title: "Dunia Cartridge - Katalog Tinta Printer",
   description: "Katalog tinta printer original terlengkap untuk Epson, HP, dan Brother.",
 };
 

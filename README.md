@@ -1,4 +1,4 @@
-# TintaPrinter.ID - Katalog Tinta Printer
+# Dunia Cartridge - Katalog Tinta Printer
 
 Website katalog tinta printer dengan tampilan menarik dan responsive.
 

@@ -17,7 +17,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [notes, setNotes] = useState('')
 
   const handleOrder = () => {
-    let message = `Halo TintaPrinter.ID, saya ingin memesan produk berikut:\n\nNama Produk: ${product.name}\nHarga: Rp ${product.price.toLocaleString("id-ID")}\n`
+    let message = `Halo Dunia Cartridge, saya ingin memesan produk berikut:\n\nNama Produk: ${product.name}\nHarga: Rp ${product.price.toLocaleString("id-ID")}\n`
 
     if (quantity) {
       message += `Jumlah: ${quantity}\n`
@@ -96,7 +96,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     setLocalReviews(updatedLocalReviews);
     
     // Send to WhatsApp for verification
-    let reviewMessage = `Halo TintaPrinter.ID, ada ulasan baru dari pelanggan!\n\nProduk: ${product.name}\n`
+    let reviewMessage = `Halo Dunia Cartridge, ada ulasan baru dari pelanggan!\n\nProduk: ${product.name}\n`
     
     if (reviewToAdd.name) {
       reviewMessage += `Nama: ${reviewToAdd.name}\n`
